@@ -1,4 +1,2 @@
-<div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">{{ inputLabel }}</label>
-    <input [type]="inputType" class="form-control">
-</div>
+<label for="exampleInputEmail1" class="form-label" *ngIf="inputLabel != undefined">{{ inputLabel }}</label>
+<input [type]="inputType" class="form-control" [placeholder]="inputPlaceholder">
