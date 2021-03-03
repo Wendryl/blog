@@ -2,7 +2,10 @@
     <nav class="navbar navbar-expand navbar-light py-4">
         <div class="container-fluid">
             <a class="navbar-brand" [routerLink]="['']">Wendryl Santos</a>
-            <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+            <button class="btn btn-outline-dark d-md-none d-sm-flex" (click)="toggleNavbar()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="flex-grow-0 d-md-flex d-sm-none">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" [routerLink]="['']">HOME</a>
@@ -16,5 +19,18 @@
                 </ul>
             </div>
         </div>
+    </nav>
+    <nav class="d-md-none navbar navbar-expand navbar-light pb-sm-3 mobile-nav animate__animated animate__fadeInDown" *ngIf="displayMobileNavbar">
+        <ul class="navbar-nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" [routerLink]="['']">HOME</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['']">POSTS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="['']">ABOUT ME</a>
+            </li>
+        </ul>
     </nav>
 </div>
