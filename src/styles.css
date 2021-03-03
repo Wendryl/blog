@@ -7,3 +7,7 @@ app-social-bar {
 .limit {
     max-width: 1100px;
 }
+
+body {
+    background: #f1f1f1;
+}
