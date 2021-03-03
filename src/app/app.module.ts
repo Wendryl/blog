@@ -10,6 +10,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { SocialBarComponent } from './Components/social-bar/social-bar.component';
 import { PostCardComponent } from './Components/post-card/post-card.component';
+import { PostPageComponent } from './Pages/post-page/post-page.component';
+import { SearchInputComponent } from './Components/search-input/search-input.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { PostCardComponent } from './Components/post-card/post-card.component';
     FooterComponent,
     SocialBarComponent,
     PostCardComponent,
+    PostPageComponent,
+    SearchInputComponent,
   ],
   imports: [
     BrowserModule,
