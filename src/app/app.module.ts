@@ -9,6 +9,7 @@ import { HomePageComponent } from './Pages/home-page/home-page.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { SocialBarComponent } from './Components/social-bar/social-bar.component';
+import { PostCardComponent } from './Components/post-card/post-card.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SocialBarComponent } from './Components/social-bar/social-bar.component
     NavbarComponent,
     FooterComponent,
     SocialBarComponent,
+    PostCardComponent,
   ],
   imports: [
     BrowserModule,
