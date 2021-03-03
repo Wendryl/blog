@@ -2,6 +2,7 @@
 app-social-bar {
     position: fixed;
     top: 40vh;
+    z-index: 1;
 }
 
 .limit {
