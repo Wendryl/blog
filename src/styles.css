@@ -12,3 +12,7 @@ app-social-bar {
 body {
     background: #f1f1f1;
 }
+
+app-search-input {
+    position: relative;
+}

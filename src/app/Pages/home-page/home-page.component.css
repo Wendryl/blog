@@ -1,3 +1,15 @@
 .posts-wrapper {
     max-width: 900px;
 }
+
+@media screen and (max-width: 432px) {
+    app-search-input {
+        width: 100% !important;
+    }
+
+    h1 {
+        width: 100%;
+        margin: 20px 0;
+        text-align: center !important;
+    }
+}
