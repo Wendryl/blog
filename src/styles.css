@@ -3,3 +3,7 @@ app-social-bar {
     position: fixed;
     top: 40vh;
 }
+
+.limit {
+    max-width: 1100px;
+}
