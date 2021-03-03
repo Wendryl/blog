@@ -1,0 +1,9 @@
+.post-shadow:hover {
+    box-shadow: 0 2px 10px #00000052;
+    transform: scale(1.005);
+    cursor: pointer;
+}
+
+.post-shadow {
+    transition: .15s ease-out;
+}
