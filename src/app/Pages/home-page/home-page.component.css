@@ -1,3 +1,7 @@
 .posts-wrapper {
     max-width: 900px;
 }
+
+.fix-search-icon {
+    transform: translate3d(-25px, 8px, 0px);
+}
