@@ -6,7 +6,7 @@ import { PostPageComponent } from './Pages/post-page/post-page.component';
 
 const routes: Routes = [
   {
-    path: 'admin',
+    path: 'login',
     component: LoginPageComponent
   },
   {
