@@ -1,2 +1,3 @@
-<label for="exampleInputEmail1" class="form-label" *ngIf="inputLabel != undefined">{{ inputLabel }}</label>
-<input [type]="inputType" class="form-control" [placeholder]="inputPlaceholder">
+<label [for]="inputId" class="form-label" *ngIf="inputLabel != undefined">{{ inputLabel }}</label>
+<input [id]="inputId" [type]="inputType" class="form-control is-invalid" [placeholder]="inputPlaceholder" [value]="value"
+    (keyup)="doInput($event.target)">
