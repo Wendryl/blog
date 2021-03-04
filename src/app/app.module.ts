@@ -12,6 +12,7 @@ import { SocialBarComponent } from './Components/social-bar/social-bar.component
 import { PostCardComponent } from './Components/post-card/post-card.component';
 import { PostPageComponent } from './Pages/post-page/post-page.component';
 import { SearchInputComponent } from './Components/search-input/search-input.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SearchInputComponent } from './Components/search-input/search-input.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
