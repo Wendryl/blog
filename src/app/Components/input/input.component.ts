@@ -16,6 +16,8 @@ import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 export class InputComponent implements ControlValueAccessor {
 
   private _value: any = '';
+  @Input('invalid')
+  isInvalid = false;
   onChange: any = (value: any) => { };
   onTouched: any = () => { };
 
