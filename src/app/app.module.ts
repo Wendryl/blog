@@ -13,6 +13,8 @@ import { PostCardComponent } from './Components/post-card/post-card.component';
 import { PostPageComponent } from './Pages/post-page/post-page.component';
 import { SearchInputComponent } from './Components/search-input/search-input.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { DashboardPageComponent } from './Pages/dashboard-page/dashboard-page.component';
+import { SidebarComponent } from './Components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     PostCardComponent,
     PostPageComponent,
     SearchInputComponent,
+    DashboardPageComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
