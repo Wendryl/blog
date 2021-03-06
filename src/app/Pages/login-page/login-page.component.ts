@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import * as Swal from 'sweetalert2';
 
 @Component({
@@ -11,7 +12,7 @@ export class LoginPageComponent implements OnInit {
 
   loading = false;
   loginForm!: FormGroup;
-  constructor() { }
+  constructor(private _router: Router) { }
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
@@ -35,7 +36,7 @@ export class LoginPageComponent implements OnInit {
     } else {
       setTimeout(() => {
         this.loading = false;
-        return Swal.default.fire('Success!', 'You\'ll be redirected to dashboard!', 'success');
+        return this._router.navigate(['/dashboard']);
       }, 3000)
     }
   }
