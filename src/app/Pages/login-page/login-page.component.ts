@@ -9,6 +9,7 @@ import * as Swal from 'sweetalert2';
 })
 export class LoginPageComponent implements OnInit {
 
+  loading = false;
   loginForm!: FormGroup;
   constructor() { }
 
@@ -25,9 +26,16 @@ export class LoginPageComponent implements OnInit {
     const password = this.loginForm.controls.password.value;
 
     evt.preventDefault();
-    if (this.loginForm.controls.email.value != 'wendryl10000@gmail.com' || this.loginForm.controls.password.value != '123123') {
+    this.loading = true;
+    if (email != 'wendryl10000@gmail.com' || password != '123123') {
       setTimeout(() => {
+        this.loading = false;
         return Swal.default.fire('Error!', 'Email or password invalid!', 'error');
+      }, 3000)
+    } else {
+      setTimeout(() => {
+        this.loading = false;
+        return Swal.default.fire('Success!', 'You\'ll be redirected to dashboard!', 'success');
       }, 3000)
     }
   }
