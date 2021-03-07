@@ -15,6 +15,7 @@ import { SearchInputComponent } from './Components/search-input/search-input.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardPageComponent } from './Pages/dashboard-page/dashboard-page.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
+import { DashboardCardComponent } from './Components/dashboard-card/dashboard-card.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
     SearchInputComponent,
     DashboardPageComponent,
     SidebarComponent,
+    DashboardCardComponent,
   ],
   imports: [
     BrowserModule,
