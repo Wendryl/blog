@@ -1,22 +1,25 @@
 <div class="row w-100">
-    <app-sidebar class="col-1"></app-sidebar>
-    <div class="col-11 p-3">
-        <div class="row gx-3">
-            <div class="col-md-4">
-                <div class="card">
-                    <div class="card-body text-end">
-                        <i class="float-start fs-1 fas fa-tag text-primary"></i>
-                        <h5>Available tags</h5>
-                        <h3>4</h3>
-                    </div>
-                    <div class="card-footer text-start">
-                        <a class="btn btn-link" href="#">
-                            <i class="mx-1 fas fa-arrow-right"></i>
-                            See all
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <app-sidebar class="col-1"></app-sidebar>
+  <div class="col-11 p-3">
+    <div class="row gx-3">
+      <app-dashboard-card
+        cardIcon="fa-tag"
+        cardLabel="Tags cadastradas"
+        cardCount="2"
+        class="col-md-4">
+      </app-dashboard-card>
+      <app-dashboard-card
+        cardIcon="fa-newspaper"
+        cardLabel="Posts cadastrados"
+        cardCount="8"
+        class="col-md-4">
+      </app-dashboard-card>
+      <app-dashboard-card
+        cardIcon="fa-filter"
+        cardLabel="Categorias"
+        cardCount="2"
+        class="col-md-4">
+      </app-dashboard-card>
     </div>
+  </div>
 </div>
