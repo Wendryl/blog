@@ -16,6 +16,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DashboardPageComponent } from './Pages/dashboard-page/dashboard-page.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { DashboardCardComponent } from './Components/dashboard-card/dashboard-card.component';
+import { ManagePostsPageComponent } from './Pages/manage-posts-page/manage-posts-page.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { DashboardCardComponent } from './Components/dashboard-card/dashboard-ca
     DashboardPageComponent,
     SidebarComponent,
     DashboardCardComponent,
+    ManagePostsPageComponent,
   ],
   imports: [
     BrowserModule,
