@@ -7,6 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ManagePostsPageComponent implements OnInit {
 
+  posts = [
+    {
+      id: 1,
+      title: 'AngularJS vs Angular 2+',
+      slug: 'angularjs-vs-angular2'
+    },
+    {
+      id: 2,
+      title: 'AngularJS vs Angular 2+',
+      slug: 'angularjs-vs-angular2'
+    },
+    {
+      id: 3,
+      title: 'AngularJS vs Angular 2+',
+      slug: 'angularjs-vs-angular2'
+    }
+
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
