@@ -25,7 +25,8 @@ const routes: Routes = [
   },
   {
     path: 'dashboard/manage-posts',
-    component: ManagePostsPageComponent
+    component: ManagePostsPageComponent,
+    pathMatch: 'full'
   }
 ];
 
