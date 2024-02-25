@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Hello World!"
-date:   2024-02-17 00:45:49 -0300
-tags: blogging tech
+title:  "Why to use a fullstack framework when freelancing"
+date: 2024-02-24T21:30:55 -03:00
+tags: freelancing fullstack dev rails laravel angular
 ---
 <style>
   .tags {
@@ -22,7 +22,3 @@ tags: blogging tech
     <span>#{{ tag }}</span>
   {% endfor %}
 </div>
-
-Hello there! 
-This is my first post on this blog and it's basically a test to check if things will run smoothly with the blog's deploy process.   
-I hope you stay tuned for the next upcoming stuff! 
