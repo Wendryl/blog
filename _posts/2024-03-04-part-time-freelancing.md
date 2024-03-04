@@ -4,6 +4,7 @@ title: "Part-time freelancing - Advices to successfuly deliver freelancing
 projects"
 date: 2024-03-04T12:44:20 -03:00
 tags: freelancing fullstack dev rails
+author: Wendryl Santos
 ---
 <style>
   .tags {
