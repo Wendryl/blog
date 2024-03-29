@@ -4,6 +4,3 @@
 
 layout: home
 ---
-
-<script data-goatcounter="https://wndrblg.goatcounter.com/count"
-async src="//gc.zgo.at/count.js"></script>

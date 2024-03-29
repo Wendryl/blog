@@ -6,24 +6,6 @@ date: 2024-03-04T12:44:20 -03:00
 tags: freelancing fullstack dev rails
 author: Wendryl Santos
 ---
-<style>
-  .tags {
-    text-align: right;
-    margin-bottom: 10px;
-  }
-  
-  .tags span {
-    background: #efefef;
-    color: #696969;
-    border-radius: 8px;
-    padding: 2px 5px;
-  }
-</style>
-<div class="tags">
-  {% for tag in page.tags %}
-    <span>#{{ tag }}</span>
-  {% endfor %}
-</div>
 My goal here is to share some insights that I had after working for a while as a
 part-time freelancer in big projects - generally building fullstack applications
 from scratch.
