@@ -19,6 +19,9 @@ title: wendryl.dev
             <a href="{{ post.data.page.url }}">
                 Ler post
             </a>
+            <span class="post__date">
+                {{ post.date | prettydate }}
+            </span>
         </div>
     </li>
     {% endfor %}

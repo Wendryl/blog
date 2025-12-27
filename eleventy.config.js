@@ -11,6 +11,10 @@ export default async function(eleventyConfig) {
 
     return now - then;
   });
+  eleventyConfig.addFilter('prettydate', (date) => {
+    return new Intl.DateTimeFormat("pt-BR", { day: "numeric", month: "long", year: "numeric" }).format(new Date(date)).toString();
+  });
+  
 
   // Plugins
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);

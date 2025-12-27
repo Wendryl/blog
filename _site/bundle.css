@@ -81,6 +81,11 @@ a {
   padding: 0 15px 15px;
 }
 
+.post__date {
+  color: var(--lighter-text);
+  float: right;
+}
+
 :root {
   --accent: #F71735;
   --accent-darker: #D9142E;
@@ -90,6 +95,7 @@ a {
 @media (prefers-color-scheme: dark) {
   :root {
     --text: #f9f9f9;
+    --lighter-text: #f9f9f9a0;
     --bg: #1e1e1e;
     --bg-card: #1c1c1cc2;
     --shadow: #131313;
@@ -100,6 +106,7 @@ a {
 @media (prefers-color-scheme: light) {
   :root {
     --text: #1e1e1e;
+    --lighter-text: #1e1e1ea0;
     --bg: #f9f9f9;
     --bg-card: #ffffffee;
     --shadow: #c6c6c682;
