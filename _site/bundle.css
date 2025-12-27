@@ -100,6 +100,7 @@ a {
     --bg-card: #1c1c1cc2;
     --shadow: #131313;
     --border: #484848;
+    --code-block: #131313;
   }
 }
 
@@ -111,6 +112,7 @@ a {
     --bg-card: #ffffffee;
     --shadow: #c6c6c682;
     --border: #c6c6c6;
+    --code-block: #eaeaea;
   }
 }
 
