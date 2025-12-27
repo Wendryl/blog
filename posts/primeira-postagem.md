@@ -6,6 +6,8 @@ coveralt: Um laptop ao lado de uma xícara de café
 tags: post
 layout: post.njk
 ---
+Olá mundo!
 
-# {{ title }}
-### {{ summary }}
+Este é o primeiro post do blog obviamente. 
+
+Meu antigo blog utilizava [Jekyll](https://jekyllrb.com/) como gerador de conteúdo estático.  
