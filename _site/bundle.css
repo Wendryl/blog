@@ -1,0 +1,117 @@
+*, html, body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Funnel Sans, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Funnel Display, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+  color: var(--link);
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 25px 0;
+}
+
+.links a {
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  border-radius: 50px;
+  transition: all ease-in-out 180ms;
+  text-decoration: none;
+  color: var(--text);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.links a:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.copy {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.posts {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.post {
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  overflow: hidden;
+  flex: 1 auto;
+}
+
+.post__cover {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.post__subtitle {
+  font-weight: lighter;
+}
+
+.post__content {
+  padding: 0 15px 15px;
+}
+
+:root {
+  --accent: #F71735;
+  --accent-darker: #D9142E;
+  --link: #17a5f7;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #f9f9f9;
+    --bg: #1e1e1e;
+    --bg-card: #1c1c1cc2;
+    --shadow: #131313;
+    --border: #484848;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text: #1e1e1e;
+    --bg: #f9f9f9;
+    --bg-card: #ffffffee;
+    --shadow: #c6c6c682;
+    --border: #c6c6c6;
+  }
+}
+
+.post-cover {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 1px solid var(--border);
+}
+
+
