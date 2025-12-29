@@ -1,4 +1,5 @@
 import { eleventyImageTransformPlugin } from '@11ty/eleventy-img';
+import { HtmlBasePlugin } from '@11ty/eleventy';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 
 export default async function(eleventyConfig) {
@@ -20,4 +21,5 @@ export default async function(eleventyConfig) {
   // Plugins
   eleventyConfig.addPlugin(eleventyImageTransformPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(HtmlBasePlugin);
 }
