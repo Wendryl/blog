@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "npx @11ty/eleventy --server",
-    "build-ghpages": "npx @11ty/eleventy",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/blog/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
