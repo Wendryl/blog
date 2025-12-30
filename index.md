@@ -14,7 +14,7 @@ title: wendryl.dev
                 {{ post.data.title }}
             </h2>
             <span class="post__date">
-                {{ post.date | prettydate }} - tempo de leitura {{ post.content | readingTime }}
+                {{ post.date | prettydate }} - {{ post.content | readingTime }} de leitura
             </span>
             <h3 class="post__subtitle">
                 {{ post.data.summary }}

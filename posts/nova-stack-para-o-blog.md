@@ -1,7 +1,7 @@
 ---
 title: Nova stack para o blog
 summary: De Jekyll para 11ty - E mais algumas coisas sobre geradores de site estático
-cover: https://images.pexels.com/photos/4061531/pexels-photo-4061531.jpeg
+cover: /assets/nova-stack-thumb.jpg
 coveralt: A mão de uma pessoa digitando em um teclado de um Macbook.
 tags: post
 layout: post.njk
