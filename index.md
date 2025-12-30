@@ -1,6 +1,6 @@
 ---
 layout: main.njk
-title: wendryl.dev
+title: wendryl.dev | Conteúdo tech toda semana.
 ---
 # wendryl.dev
 ### Conteúdo tech toda semana.
