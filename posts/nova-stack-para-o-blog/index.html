@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Funnel+Display:wght@300..800&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-okaidia.min.css" integrity="sha512-5HvW0a7ihK3ro2KhwEksDHXgIezsTeZybZDIn8d8Y015Ny+t7QWSIjnlCTjFzlK7Klb604HLGjsNqU/i5mJLjQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/blog/bundle.css">
+    <title>wendryl.dev | Nova stack para o blog</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="links container">
+        <li>
+          <a href="/blog/">
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="/blog/about">
+            Sobre
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <picture><source type="image/webp" srcset="/blog/posts/nova-stack-para-o-blog/XQ918V6SYl-480.webp 480w"><img src="/blog/posts/nova-stack-para-o-blog/XQ918V6SYl-480.jpeg" alt="Um laptop ao lado de uma xícara de café" class="post-cover" width="480" height="320"></picture>
+      <h1>
+        Nova stack para o blog
+      </h1>
+      <span class="post__date">
+        30 de dezembro de 2025
+      </span>
+      <h3>
+        Usando 11ty para construir um site estático
+      </h3>
+      <hr>
+      <h2>Olá mundo!</h2>
+<p>O blog está de cara nova.</p>
+<p>Meu antigo blog utilizava <a href="https://jekyllrb.com/">Jekyll</a> como gerador de conteúdo estático. Como eu achava um pouco trabalhoso
+fazer alterações usando Jekyll optei por mudar nossa stack de <a href="https://en.wikipedia.org/wiki/Static_site_generator">SSG</a>.</p>
+<p>Cheguei a testar <a href="https://astro.build/">Astro</a> e <a href="https://gohugo.io/">Hugo</a> mas achei que esses geradores precisavam de muita configuração,
+e uma curva de aprendizado muito íngreme.</p>
+<p>Agora estou usando <a href="https://www.11ty.dev/">11ty</a> (ou Eleventy). Este SSG tem como objetivo a simplicidade.
+Em alguns instantes vc consegue ter uma configuração básica para começar seu site estático ou blog, veja só:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token comment"># crie o diretório do seu site</span>
+<span class="token function">mkdir</span> meu-blog
+<span class="token builtin class-name">cd</span> meu-blog
+
+<span class="token comment"># inicialize o npm</span>
+<span class="token function">npm</span> init <span class="token parameter variable">-y</span>
+<span class="token function">npm</span> pkg <span class="token builtin class-name">set</span> <span class="token assign-left variable">type</span><span class="token operator">=</span><span class="token string">"module"</span>
+
+<span class="token comment"># instale o 11ty</span>
+<span class="token function">npm</span> i @11ty/eleventy
+
+<span class="token comment"># Teste</span>
+<span class="token builtin class-name">echo</span> <span class="token string">"# Hello World"</span> <span class="token operator">>></span> index.md
+npx @11ty/eleventy <span class="token parameter variable">--serve</span></code></pre>
+<p>A configuração de plugins e de qualquer coisa que vc precise para configurar um site estático ou blog é explicada na <a href="https://www.11ty.dev/docs/">documentação do 11ty</a></p>
+
+    </div>
+    <span class="copy">
+      Copyright &copy; Wendryl Santos Tecnologia - 2025
+    </span>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js" integrity="sha512-UOoJElONeUNzQbbKQbjldDf9MwOHqxNz49NNJJ1d90yp+X9edsHyJoAs6O4K19CZGaIdjI5ohK+O2y5lBTW6uQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </body>
+</html>
