@@ -9,6 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/themes/prism-okaidia.min.css" integrity="sha512-5HvW0a7ihK3ro2KhwEksDHXgIezsTeZybZDIn8d8Y015Ny+t7QWSIjnlCTjFzlK7Klb604HLGjsNqU/i5mJLjQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/bundle.css">
     <title>wendryl.dev | {{ title }}</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{ title }}" />
+    <meta name="description" content="{{ summary }}" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://wendryl.github.io/blog{{ page.url }}" />
+    <meta property="og:title" content="{{ title }}" />
+    <meta property="og:description" content="{{ summary }}" />
+    <meta property="og:image" content="{{ cover }}" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://wendryl.github.io/blog{{ page.url }}" />
+    <meta property="twitter:title" content="{{ title }}" />
+    <meta property="twitter:description" content="{{ summary }}" />
+    <meta property="twitter:image" content="{{ cover }}" />
   </head>
   <body>
     <nav>
