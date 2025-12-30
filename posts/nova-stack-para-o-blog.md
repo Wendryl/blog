@@ -1,8 +1,8 @@
 ---
 title: Nova stack para o blog
-summary: Usando 11ty para construir um site estático
-cover: https://p0.piqsels.com/preview/968/1021/122/macbook-computer-laptop-technology-thumbnail.jpg
-coveralt: Um laptop ao lado de uma xícara de café
+summary: De Jekyll para 11ty - E mais algumas coisas sobre geradores de site estático
+cover: https://images.pexels.com/photos/4061531/pexels-photo-4061531.jpeg
+coveralt: A mão de uma pessoa digitando em um teclado de um Macbook.
 tags: post
 layout: post.njk
 draft: false
@@ -11,14 +11,19 @@ draft: false
 
 O blog está de cara nova. 
 
-Meu antigo blog utilizava [Jekyll](https://jekyllrb.com/) como gerador de conteúdo estático. Como eu achava um pouco trabalhoso
-fazer alterações usando Jekyll optei por mudar nossa stack de [SSG](https://en.wikipedia.org/wiki/Static_site_generator).
+Meu antigo blog utilizava [Jekyll](https://jekyllrb.com/). Como eu achava um pouco trabalhoso demais
+fazer alterações usando essa ferramenta optei por mudar nossa stack.
 
-Cheguei a testar [Astro](https://astro.build/) e [Hugo](https://gohugo.io/) mas achei que esses geradores precisavam de muita configuração,
+Cheguei a testar [Astro](https://astro.build/) e [Hugo](https://gohugo.io/) mas achei que essas bibliotecas precisavam de muita configuração,
 e uma curva de aprendizado muito íngreme.
 
-Agora estou usando [11ty](https://www.11ty.dev/) (ou Eleventy). Este SSG tem como objetivo a simplicidade.
-Em alguns instantes vc consegue ter uma configuração básica para começar seu site estático ou blog, veja só:  
+Pra quem não sabe, esse tipo de biblioteca é chamado de [SSG](https://en.wikipedia.org/wiki/Static_site_generator) (Static Site Generator ou gerador de site estático em português).
+
+Aqui tem uma lista de SSG's: [https://jamstack.org/generators/](https://jamstack.org/generators/)
+
+Agora estou usando [11ty](https://www.11ty.dev/) (ou Eleventy). Muito mais simples, fácil de utilizar e fácil de aprender na minha opinião.
+
+Com poucas linhas de código você já tem um site simples rodando, além de ser muito fácil de fazer deploy utilizando Github Pages por exemplo.
 
 
 ```bash
@@ -39,3 +44,7 @@ npx @11ty/eleventy --serve
 ```
 
 A configuração de plugins e de qualquer coisa que vc precise para configurar um site estático ou blog é explicada na [documentação do 11ty](https://www.11ty.dev/docs/)
+
+Pretendo trazer mais conteudo sobre o eleventy nesse blog, como configurar plugins, filtros, etc.
+
+Te vejo no próximo post!

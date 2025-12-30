@@ -13,15 +13,15 @@ title: wendryl.dev
             <h2>
                 {{ post.data.title }}
             </h2>
+            <span class="post__date">
+                {{ post.date | prettydate }}
+            </span>
             <h3 class="post__subtitle">
                 {{ post.data.summary }}
             </h3>
             <a href="{{ post.data.page.url }}">
                 Ler post
             </a>
-            <span class="post__date">
-                {{ post.date | prettydate }}
-            </span>
         </div>
     </li>
     {% endfor %}

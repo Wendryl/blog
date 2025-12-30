@@ -83,7 +83,6 @@ a {
 
 .post__date {
   color: var(--lighter-text);
-  float: right;
 }
 
 :root {
