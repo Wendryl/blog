@@ -5,6 +5,7 @@ cover: https://p0.piqsels.com/preview/968/1021/122/macbook-computer-laptop-techn
 coveralt: Um laptop ao lado de uma xícara de café
 tags: post
 layout: post.njk
+draft: true
 ---
 ## Olá mundo!
 
@@ -20,7 +21,21 @@ Agora estou usando [11ty](https://www.11ty.dev/) (ou Eleventy). Este SSG tem com
 Em alguns instantes vc consegue ter uma configuração básica para começar seu site estático ou blog, veja só:  
 
 
-```js
-// crie o diretório do seu site
-var test = "asdad"
+```bash
+# crie o diretório do seu site
+mkdir meu-blog
+cd meu-blog
+
+# inicialize o npm
+npm init -y
+npm pkg set type="module"
+
+# instale o 11ty
+npm i @11ty/eleventy
+
+# Teste
+echo "# Hello World" >> index.md
+npx @11ty/eleventy --serve
 ```
+
+A configuração de plugins e de qualquer coisa que vc precise para configurar um site estático ou blog é explicada na [documentação do 11ty](https://www.11ty.dev/docs/)
