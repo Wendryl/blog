@@ -5,7 +5,7 @@ cover: https://p0.piqsels.com/preview/968/1021/122/macbook-computer-laptop-techn
 coveralt: Um laptop ao lado de uma xícara de café
 tags: post
 layout: post.njk
-draft: true
+draft: false
 ---
 ## Olá mundo!
 
