@@ -26,7 +26,7 @@
       </ul>
     </nav>
     <div class="container">
-      <picture><source type="image/webp" srcset="/blog/posts/nova-stack-para-o-blog/XQ918V6SYl-480.webp 480w"><img src="/blog/posts/nova-stack-para-o-blog/XQ918V6SYl-480.jpeg" alt="Um laptop ao lado de uma xícara de café" class="post-cover" width="480" height="320"></picture>
+      <picture><source type="image/webp" srcset="/blog/posts/nova-stack-para-o-blog/blypbbwopE-5472.webp 5472w"><img src="/blog/posts/nova-stack-para-o-blog/blypbbwopE-5472.jpeg" alt="A mão de uma pessoa digitando em um teclado de um Macbook." class="post-cover" width="5472" height="3648"></picture>
       <h1>
         Nova stack para o blog
       </h1>
@@ -34,17 +34,19 @@
         30 de dezembro de 2025
       </span>
       <h3>
-        Usando 11ty para construir um site estático
+        De Jekyll para 11ty - E mais algumas coisas sobre geradores de site estático
       </h3>
       <hr>
       <h2>Olá mundo!</h2>
 <p>O blog está de cara nova.</p>
-<p>Meu antigo blog utilizava <a href="https://jekyllrb.com/">Jekyll</a> como gerador de conteúdo estático. Como eu achava um pouco trabalhoso
-fazer alterações usando Jekyll optei por mudar nossa stack de <a href="https://en.wikipedia.org/wiki/Static_site_generator">SSG</a>.</p>
-<p>Cheguei a testar <a href="https://astro.build/">Astro</a> e <a href="https://gohugo.io/">Hugo</a> mas achei que esses geradores precisavam de muita configuração,
+<p>Meu antigo blog utilizava <a href="https://jekyllrb.com/">Jekyll</a>. Como eu achava um pouco trabalhoso demais
+fazer alterações usando essa ferramenta optei por mudar nossa stack.</p>
+<p>Cheguei a testar <a href="https://astro.build/">Astro</a> e <a href="https://gohugo.io/">Hugo</a> mas achei que essas bibliotecas precisavam de muita configuração,
 e uma curva de aprendizado muito íngreme.</p>
-<p>Agora estou usando <a href="https://www.11ty.dev/">11ty</a> (ou Eleventy). Este SSG tem como objetivo a simplicidade.
-Em alguns instantes vc consegue ter uma configuração básica para começar seu site estático ou blog, veja só:</p>
+<p>Pra quem não sabe, esse tipo de biblioteca é chamado de <a href="https://en.wikipedia.org/wiki/Static_site_generator">SSG</a> (Static Site Generator ou gerador de site estático em português).</p>
+<p>Aqui tem uma lista de SSG's: <a href="https://jamstack.org/generators/">https://jamstack.org/generators/</a></p>
+<p>Agora estou usando <a href="https://www.11ty.dev/">11ty</a> (ou Eleventy). Muito mais simples, fácil de utilizar e fácil de aprender na minha opinião.</p>
+<p>Com poucas linhas de código você já tem um site simples rodando, além de ser muito fácil de fazer deploy utilizando Github Pages por exemplo.</p>
 <pre class="language-bash"><code class="language-bash"><span class="token comment"># crie o diretório do seu site</span>
 <span class="token function">mkdir</span> meu-blog
 <span class="token builtin class-name">cd</span> meu-blog
@@ -60,7 +62,12 @@ Em alguns instantes vc consegue ter uma configuração básica para começar seu
 <span class="token builtin class-name">echo</span> <span class="token string">"# Hello World"</span> <span class="token operator">>></span> index.md
 npx @11ty/eleventy <span class="token parameter variable">--serve</span></code></pre>
 <p>A configuração de plugins e de qualquer coisa que vc precise para configurar um site estático ou blog é explicada na <a href="https://www.11ty.dev/docs/">documentação do 11ty</a></p>
+<p>Pretendo trazer mais conteudo sobre o eleventy nesse blog, como configurar plugins, filtros, etc.</p>
+<p>Te vejo no próximo post!</p>
 
+      <a href="/blog/">
+        Todos os posts
+      </a>
     </div>
     <span class="copy">
       Copyright &copy; Wendryl Santos Tecnologia - 2025
