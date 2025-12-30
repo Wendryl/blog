@@ -31,7 +31,7 @@
         {{ title }}
       </h1>
       <span class="post__date">
-        {{ page.date | prettydate }}
+        {{ page.date | prettydate }} - Tempo de leitura {{ content | readingTime }}
       </span>
       <h3>
         {{ summary }}

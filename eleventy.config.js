@@ -16,6 +16,21 @@ export default async function(eleventyConfig) {
   eleventyConfig.addFilter('prettydate', (date) => {
     return new Intl.DateTimeFormat("pt-BR", { day: "numeric", month: "long", year: "numeric" }).format(new Date(date)).toString();
   });
+  eleventyConfig.addFilter("readingTime", (content) => {
+    const WORDS_PER_MINUTE = 238;
+
+    if (typeof content !== "string") {
+      return "0 minutos";
+    }
+
+    const wordCount = content
+      .split(/\s+/)
+      .filter((word) => word.length > 0).length;
+
+    const readingTimeMinutes = Math.ceil(wordCount / WORDS_PER_MINUTE);
+
+    return `${readingTimeMinutes} minuto${readingTimeMinutes > 1 ? "s" : ""}`;
+  });
   
 
   // Plugins
@@ -24,7 +39,7 @@ export default async function(eleventyConfig) {
   eleventyConfig.addPlugin(HtmlBasePlugin);
 
   // Preprocesessors
-  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+  eleventyConfig.addPreprocessor("drafts", "*", (data) => {
     if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
       return false;
     }
