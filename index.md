@@ -6,7 +6,7 @@ title: wendryl.dev | Conteúdo tech toda semana.
 ### Conteúdo tech toda semana.
 ---
 <ul class="posts">
-    {%- for post in collections.post -%}
+    {%- for post in collections.post reversed -%}
     <li class="post">
         <img class="post__cover" src="{{ post.data.cover }}" alt="{{ post.data.coveralt }}">
         <div class="post__content">
